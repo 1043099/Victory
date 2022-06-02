@@ -166,6 +166,10 @@ main{
 	.blikje{
 		display: none;
 	}
+	
+	.blikje2{
+		display: block;
+	}
 
 	#links1{
 		font-size: 1rem;
