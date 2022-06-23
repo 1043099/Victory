@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+body{
+    background-color: #FCC110;
+}
+
+.navbar {
+	position: fixed;
+	background-color: black;
+	width: 100%;
+	top: 0;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 175%;
+	padding-right: 1.5vw;
+}
+
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+}
+
+.logo{
+	width: 7vw;
+	padding-top: 2vh;
+}
+
+
+li {
+	padding: 5vh 0vw 5vh 0vw;
+}
+
+main{
+	height: 89vh;
+	background: linear-gradient(
+		to right,
+		black 0%,
+		black 50%,
+		#FCC110 50%,
+		#FCC110 100%
+	);
+}
