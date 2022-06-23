@@ -69,6 +69,7 @@ main{
 
 #midden{
 	grid-area: midden;
+	z-index: 0;
 }
 
 #rechts{
@@ -122,6 +123,7 @@ main{
 	width: 5vw;
 	padding-top: 8.9vh;
 	padding-left: 1vw;
+	z-index: 1;
 }
 
 .contact{
@@ -268,4 +270,4 @@ main{
 	  
 	  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 	  .show {display:block;}
-	}}
+	}
