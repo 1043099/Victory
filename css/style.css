@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-
+	body {
+	  background-color: lightblue;
+	}
 *{
 	margin: 0 auto;
 	padding: 0;
@@ -69,7 +71,6 @@ main{
 
 #midden{
 	grid-area: midden;
-	z-index: 0;
 }
 
 #rechts{
@@ -123,7 +124,6 @@ main{
 	width: 5vw;
 	padding-top: 8.9vh;
 	padding-left: 1vw;
-	z-index: 1;
 }
 
 .contact{
@@ -147,6 +147,10 @@ main{
 	display: none;
 }
 
+.disapear2{
+	display: none;
+}
+
 
 
 
@@ -163,6 +167,10 @@ main{
 
 	.disapear{
 		display: none;
+	}
+	
+	.disapear2{
+		display: flex;
 	}
 
 	.blikje{
@@ -224,50 +232,4 @@ main{
 		padding-top: 18vh;
 		padding-left: 0vw;
 	}
-
-
-	.dropbtn {
-		background-color: #FCC110;
-		color: white;
-		padding: 16px;
-		font-size: 16px;
-		border: none;
-		cursor: pointer;
-	  }
-	  
-	  /* Dropdown button on hover & focus */
-	  .dropbtn:hover, .dropbtn:focus {
-		background-color: #FCC110;
-	  }
-	  
-	  /* The container <div> - needed to position the dropdown content */
-	  .dropdown {
-		position: relative;
-		display: inline-block;
-		padding-top: 5vh;
-	  }
-	  
-	  /* Dropdown Content (Hidden by Default) */
-	  .dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #f1f1f1;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-	  }
-	  
-	  /* Links inside the dropdown */
-	  .dropdown-content a {
-		color: black;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-	  }
-	  
-	  /* Change color of dropdown links on hover */
-	  .dropdown-content a:hover {background-color: #ddd}
-	  
-	  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-	  .show {display:block;}
 	}
