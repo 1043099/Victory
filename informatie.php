@@ -25,7 +25,6 @@
                       <a href="index.php">Home</a>
                       <a href="evenementen.php">Evenementen</a>
                       <a href="informatie.php">Informatie</a>
-                      <a href="overons.php">Over ons</a>
                       <a href="contact.php">Contact</a>
                     </div>
                 </div>
@@ -34,7 +33,7 @@
                 <li><a href="index.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
                 <li><a href="evenementen.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;Evenementen</a></li>
                 <li><a href="informatie.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;Informatie</a></li>
-                <li><a href="contact.php" class="disapear">Over ons &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact</a></li>
+                <li><a href="contact.php" class="disapear">Contact</a></li>
             </ul>
         </nav>
     </section>
