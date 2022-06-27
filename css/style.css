@@ -151,6 +151,9 @@ main{
 	display: none;
 }
 
+.navbar2{
+	display: none;
+}
 
 
 
@@ -170,13 +173,13 @@ main{
 	}
 	
 	.disapear2{
+		display: flex;
+	}
+
+	.navbar2{
 		display: block;
 	}
 
-	.socialicons2 {
-		display: block;
-	}
-	 
 	.blikje{
 		display: none;
 	}
