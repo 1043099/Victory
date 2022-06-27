@@ -1,95 +1,98 @@
-<?php
-    $error = "";
-    if (isset($_POST['submit'])) {
-        if (!empty($_POST['username']) && !empty($_POST['password'])) {
-    
-            require("dbconnect.php");
-    
-            $sql = "SELECT * FROM gebruikers WHERE username = '".trim($_POST['username'])."' AND password = '".trim($_POST['password'])."'";
-    
-            if ($result = $conn->query($sql)) {
-                $aantal = $result->num_rows;
-                if ($aantal == 1) {
-                    $row = $result->fetch_assoc();
-                    session_start();
-                    $_SESSION['ingelogd'] = true;
-                    $_SESSION['username'] = trim($_POST['username']);
-                    $_SESSION['id'] = (integer)$row['gebruiker_id'];
-                    header("location: ingelogd.php");
-                } else {
-                    $error = "niet de juiste gegevens ingevuld";
-                }
-            } 
-        } else {
-            $error = "vul de velden in";
-        }
+<?php 
+if (isset($_POST['submit'])){
+    require('config.php');
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $permission = $_POST['permission'];
+
+    $sql = "INSERT INTO gebruikers (username, password)
+    VALUES ('$username', '$password')";
+    $result = mysqli_query($conn, $sql);
+    if ($result) {
+        echo "<script>alert('met succes toegevoegt.')</script>";
+    } else {
+        echo "<script>alert('niet toegevoegt')</script>";
     }
+}
+
+$error = "";
+if (isset($_POST['loginsubmit'])){
+    require('config.php');
+
+    if (!empty($_POST['username']) && !empty($_POST['pass'])){
+        $username = $_POST['username'];
+        $password = $_POST['pass'];
+        $sql = "SELECT * FROM gebruikers WHERE username = '".$username."' AND `password` = '".$password."'"; 
+        if($result = $conn->query($sql)) {
+
+            $aantal = $result->num_rows;
+            if($aantal == 1) {
+                session_start();
+                $_SESSION['ingelogd'] = true;
+                $_SESSION['username'] = $username;
+                $_SESSION['password'] = $password;
+                header("Location: index.php");
+            }else{
+                $error = "gegevens onjuist";
+            }
+        }
+
+        
+    } else {
+        $error = "Username & password zijn verplicht";
+    }
+}
+
 ?>
-<!doctype html>
 <html>
-
 <head>
-    <!--meta data-->
-    <!--usable characters for the website-->
-    <meta charset="utf-8">
-
-    <!--language of the page-->
-    <meta http-equiv="language" content="NL">
-
-    <!--display settings-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--website description-->
-    <meta name="description" content="">
-
-    <!--author data-->
-    <meta name="author" content="Levy van der Valk">
-
-    <!--search words for google-->
-    <meta name="keywords" content="">
-
-    <!--website title in tab-->
-    <title>contact</title>
-
-    <!--linking a .css page-->
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Login formulier</title>
+    <link rel="stylesheet" type="text/css" href="css/inloggen.css">
+    <link rel="stylesheet" type="text/css" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
-
 <body>
-    <!--body data-->
-    <header>
-        <!--header data-->
-        <div></div>
-        <img src="images/logo.png" alt="Logo">
-        <nav>
-            <?php
-            session_start();
-                if(isset($_SESSION['ingelogd']) && $_SESSION['ingelogd'] == true) {
-                    echo '<a href="./ingelogd.php">Home</a>';
-                } else {
-                    echo '<a href="./index.php">Home</a>';
-                }
-            ?>
-            <a href="">Product Info</a>
-            <a href="">Kalender</a>
-            <a href="">Artiesten</a>   
-            <a href="">Aanbiedingen</a>
-            <a href="./contact.php">Contact</a>
-            <a href="./registreren.php">Registreren</a>
-        </nav>
-        <div></div>
-    </header>
-    <form method="POST">
-        <input type="text" name="username" required placeholder="vul hier je username in">
-        <input type="password" name="password" required placeholder="vul hier je wachtwoord in">
-        <input type="submit" value="log in" name="submit">
-    </form>
-    <footer>
-        <!--footer data-->
 
-    </footer>
-    <!--linking a .js file-->
-    <script src="" type="text/javascript"></script>
+<a href="index.php" id="terug">Terug naar de homepage</a>
+
+<div class="container">
+<div class="login-box">
+<div class="row">
+<div class="col-md-6 login-left">
+<h2> Inloggen </h2>
+<form method="POST">
+<div class="form-group">
+<label>Gebruikersnaam</label>
+<input type="text" name="username" class="form-control" required>
+</div>
+<div class="form-group">
+<label>Wachtwoord</label>
+<input type="password" name="pass" class="form-control" required>
+</div>
+<input name="loginsubmit" type="submit" class="btn btn-primary" value="Inloggen">
+</form>
+</div>
+
+<div class="col-md-6 login-right">
+<h2> Aanmelden </h2>
+<form method="POST">
+<div class="form-group">
+<label>Gebruikersnaam</label>
+<input type="text" name="username" class="form-control" required>
+</div>
+<div class="form-group">
+<label>Wachtwoord</label>
+<input type="password" name="password" class="form-control" required>
+</div>
+<input type="submit" name="submit" class="btn btn-primary" value="Aanmelden">
+</form>
+</div>
+
+</div>
+
+</div>
+
+</div>
 </body>
-
 </html>
