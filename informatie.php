@@ -1,76 +1,91 @@
-<html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="css/artiesten.css" rel="stylesheet" type="text/css">
-<nav class="navbar navbar-expand-sm navbar-dark">
-    <img src="images/LOGO (2).png" width="200" alt=""> 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> 
-        <span class="navbar-toggler-icon"></span> 
-    </button>
-    <div class="end">
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav">
-            <li class="nav-item active"> <a class="nav-link mt-2" href="#" data-abc="true" id="clicked">Home<span class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="product.php" data-abc="true">producten</a> </li>
-                <li class="nav-item "> <a class="nav-link" href="#" data-abc="true">Evenementen</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#" data-abc="true">Contact</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="#" data-abc="true">inloggen</a> </li>
-            </ul>        
-        </div>
-    </div>    
-</nav>
-<!-- Main Body -->
+<!DOCTYPE html>
+<html lang="en">
 
-<?php
-
-?>
-
-<table>
-    <tr>
-        <th>Artiest</th>
-        <th>Naam</th>
-        <th>statement</th>
-        <th>telefoon nr</th>
-        <th>activiteit</th>
-    </tr>    
-    <?php
-    require('config.php');
-
-
-    $sql = "SELECT * FROM artiesten";
-    if($result = $conn-> query($sql)){
-        while($row = $result->fetch_assoc()) {
-            echo "<tr><td>";
-            echo $row['naam'];
-            echo "</td>";
-            echo "<td>";
-            echo $row['voornaam']." ".$row['tussenvoegsel']." ".$row['achternaam'];
-            echo "</td>";
-            echo "<td>";
-            echo $row['statement'];
-            echo "</td>";
-            echo "<td>";
-            echo $row['telefoon']; 
-            echo "</td>";
-            echo "<td>";
-            if($row['actief'] == 1){
-                echo "actief";
-            }else if ($row['actief'] == 0){
-                echo "non actief";
-            }
-            echo "</td></tr>";
-        }
-    }
-
-    ?>
-</table>
-
-<section>
-    <div class="container">
-        <div class="row">
-        </div>
-    </div>
-</section>
+<head>
+    <meta charset="utf-8">
+    <title>Victory</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/informatie.css" rel="stylesheet">
+</head>
+<header>
+        <section class="navbar">
+        <nav class="nav">
+            <ul class="grid">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="index.php">Home</a>
+                      <a href="evenementen.php">Evenementen</a>
+                      <a href="informatie.php">Informatie</a>
+                      <a href="inloggen.php">Login</a>
+                    </div>
+                </div>
+                <li><a href="#" class="disapear2"><img src="images/hamburger.webp" width="80" height="50"></a></li>
+                <img src="images/LOGO (2).png" class="logo" alt="">
+                <li><a href="index.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+                <li><a href="evenementen.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;Evenementen</a></li>
+                <li><a href="informatie.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;Informatie</a></li>
+                <li><a href="inloggen.php" class="disapear">Login</a></li>
+            </ul>
+        </nav>
+    </section>
+    </header>
+<body>
+    <!-- Products Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="section-title position-relative text-center mb-5">Onze Energy Drinks</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+                            <h4 class="font-weight-bold text-white mb-0">$1,50</h4>
+                        </div>
+                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+                            <img class="grid-item-2 blikje" src="images/can1orange.png" style="object-fit: scale-down;">
+                        </div>
+                        <h5 class="font-weight-bold mb-4">Victory energy Classic</h5>
+                        <a href="" class="btn btn-sm btn-secondary">250ml</a>
+                        <p1 id="info"><br>Ingrediënten. Water, Suiker, Vet, Vetzuur, Eiwit.</p1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+                            <h4 class="font-weight-bold text-white mb-0">$3,-</h4>
+                        </div>
+                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+                            <img class="grid-item-2 blikje" src="images/can1orange.png" style="object-fit: scale-down;">
+                        </div>
+                        <h5 class="font-weight-bold mb-4">Victory energy zero sugar</h5>
+                        <a href="" class="btn btn-sm btn-secondary">250ml</a>
+                        <p1 id="info"><br>Ingrediënten. Water, Suiker, Vet, Vetzuur, Eiwit.</p1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+                            <h4 class="font-weight-bold text-white mb-0">$4,-</h4>
+                        </div>
+                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+                            <img class="grid-item-2 blikje" src="images/can1orange.png" style="object-fit: scale-down;">
+                        </div>
+                        <h5 class="font-weight-bold mb-4">Victory energy big</h5>
+                        <a href="" class="btn btn-sm btn-secondary">500ml</a>
+                        <p1 id="info"><br>Ingrediënten. Water, Suiker, Vet, Vetzuur, Eiwit.</p1>
+                    </div>
+                </div>
+</body>
 </html>
