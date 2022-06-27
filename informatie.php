@@ -44,7 +44,7 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h1 class="section-title position-relative text-center mb-5">Our Energy Drinks</h1>
+                    <h1 class="section-title position-relative text-center mb-5">Onze Energy Drinks</h1>
                 </div>
             </div>
             <div class="row">
@@ -58,7 +58,7 @@
                         </div>
                         <h5 class="font-weight-bold mb-4">Victory energy Classic</h5>
                         <a href="" class="btn btn-sm btn-secondary">250ml</a>
-                        <p1 id="info"><br>Ingredients. Carbonated Water, Sucrose, Glucose, Acidity Regulator (Citric Acid, Sodium Bicarbonate, Magnesium Carbonate), Taurine (0.4%), Flavours, Colours (Caramel, Riboflavin), Caffeine (0.03%), Vitamins (Niacinamide, Pantothenic Acid, B6, B12).</p1>
+                        <p1 id="info"><br>Ingrediënten. Water, Suiker.</p1>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
@@ -71,7 +71,7 @@
                         </div>
                         <h5 class="font-weight-bold mb-4">Victory energy zero sugar</h5>
                         <a href="" class="btn btn-sm btn-secondary">250ml</a>
-                        <p1 id="info"><br>Ingredients. Carbonated Water, Sucrose, Glucose, Acidity Regulator (Citric Acid, Sodium Bicarbonate, Magnesium Carbonate), Taurine (0.4%), Flavours, Colours (Caramel, Riboflavin), Caffeine (0.03%), Vitamins (Niacinamide, Pantothenic Acid, B6, B12).</p1>
+                        <p1 id="info"><br>Ingrediënten. Water, Suiker.</p1>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
@@ -84,7 +84,7 @@
                         </div>
                         <h5 class="font-weight-bold mb-4">Victory energy big</h5>
                         <a href="" class="btn btn-sm btn-secondary">500ml</a>
-                        <p1 id="info"><br>Ingredients. Carbonated Water, Sucrose, Glucose, Acidity Regulator (Citric Acid, Sodium Bicarbonate, Magnesium Carbonate), Taurine (0.4%), Flavours, Colours (Caramel, Riboflavin), Caffeine (0.03%), Vitamins (Niacinamide, Pantothenic Acid, B6, B12).</p1>
+                        <p1 id="info"><br>Ingrediënten. Water, Suiker.</p1>
                     </div>
                 </div>
 </body>
