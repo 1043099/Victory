@@ -5,9 +5,14 @@
 	margin: 0 auto;
 	padding: 0;
 }
-
+ 
 body{
     background-color: #FCC110;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(6, auto);
 }
 
 .navbar {
@@ -24,11 +29,6 @@ nav ul li a{
 	padding-right: 1.5vw;
 }
 
-
-.grid{
-	display: grid;
-	grid-template-columns: repeat(6, auto);
-}
 
 .logo{
 	width: 7vw;
@@ -50,3 +50,97 @@ main{
 		#FCC110 100%
 	);
 }
+
+#links{
+	grid-area: links;
+}
+
+#midden{
+	grid-area: midden;
+}
+
+#rechts{
+	grid-area: rechts;
+	align-self: start;
+	padding-top: 17.5vh;
+}
+
+#victory22, a{
+	color: black;
+	text-decoration: none;
+	font-size: 1.4rem;
+}
+
+#victory22{
+	padding-top: 21vh;
+	padding-bottom: 1vh;
+}
+
+.socialicons, .socialicons2{
+	padding-left: 5.5vw;
+}
+
+.socials{
+	width: 5vw;
+	padding-top: 8.9vh;
+	padding-left: 1vw;
+}
+
+.contact{
+	padding-left: 25vw;
+	font-size: 2rem;
+}
+
+.contact-move{
+	padding-top: 38vh;
+}
+
+.dropdown{
+	display: none;
+}
+
+.form-question {
+	margin-top: 180px;
+	background: black;
+	padding: 25px;
+	width: 640px;
+	height: 300px;
+}
+  
+  
+  input {
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 5px;
+  
+  }
+  
+  input[type="text"] {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+  }
+  
+  input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 0;
+	padding: 15px;
+	background-color: black;
+	border: 2px solid black;
+	border-radius: 10px;
+	color: white;
+	font-family: 'Roboto';}
+	
+	input[type="submit"]:hover {
+	  border: 2px solid white;
+	  background: yellow;
+	  transition-duration: 0.7s;
+	}
+  
+  textarea {
+	width: 640px;
+	border-radius: 5px;
+	padding: 5px;
+  }

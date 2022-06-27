@@ -8,7 +8,7 @@
   <meta name="description" content="Victory Energy">
   <meta name="author" content="Davey Derksen">
   <meta name="keywords" content="">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
   <script src="js/script.js"></script>
   <title>Victory Energy</title>
 </head>
@@ -37,16 +37,41 @@
     </section>
     </header>
 <body>
+
+    <legend>Choose your monster's features:</legend>
+
+    <div>
+      <input type="checkbox" id="scales" name="scales"
+             checked>
+      <label for="scales">Scales</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns" name="horns">
+      <label for="horns">Horns</label>
+    </div>
+    
+    <div class="form-question">
+
+        <form action="mail.php" method="post">
+        <h2>Задайте вопрос по email</h2>
+          <input type="text" name="name" id="login-field" value="Имя"/>
+        <input type="text" name="email" id="email-field" value="Email"/>
+        <textarea name="message" id="" rows="10">Uw bericht</textarea>
+          <input type="submit" value="Verzenden" />
+        </form>
+         
+        <h2>neem telefonisch contact op via 071 - 582 58 25</h2>
+        
+        
+        
+<footer>
     <section class="grid-container">
-        <article id="links">
-
-            <p id="links1">Victory bevat 160 mg cafeïne, een verhouding van 6: 1: 1 aan BCAA-, glycine- en B-vitamines. Geniet van onze heerlijk smakende cafeïnehoudende frisdrank zonder suiker.</p>
-
-        <p id="links2"><b>Voedingswaarde per 100ml<br></b>Energy 12KJ / 3 Kcal<br>Vet 0 gr<br>Vetzuren 0 gr<br>Koolhydraten 0 gr<br>Suikers 0 gr<br>Eiwitten 0 gr<br>Zout 0,5 gr</p>
-
+        <section id="links">
         <p id="victory22">Victory 2022</p>
         <a href="">Disclaimer: Copyright ©</a>
-<footer>
+        </section>
+
     <section class="grid-container">
     </article>
     <article id="midden">
@@ -57,14 +82,10 @@
     </section>
     </article>
     <article id="rechts">
-        <p id="victory22">Victory 2022</p>
-        <a href="">Disclaimer: Copyright ©</a>
-    </article>
-
-    <article id="rechts">
         <div class="contact-move"></div>
         <a href="" class="contact">Contact</a>
     </article>
+
 </section>
 </footer>
 </body>
