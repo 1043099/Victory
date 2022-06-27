@@ -15,24 +15,26 @@
         <section class="navbar">
         <nav class="nav">
             <ul class="grid">
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="index.php">Home</a>
-                      <a href="evenementen.php">Evenementen</a>
-                      <a href="informatie.php">Informatie</a>
-                      <a href="contact.php">Contact</a>
-                    </div>
-                </div>
-                <li><a href="#" class="disapear2"><img src="images/hamburger.webp" width="80" height="50"></a></li>
+            <li><a href="#" class="disapear2"><img src="images/hamburger.webp" width="80" height="50"></a></li>
                 <img src="images/LOGO (2).png" class="logo" alt="">
-                <li><a href="#" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
-                <li><a href="evenementen.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;Evenementen</a></li>
-                <li><a href="informatie.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;Informatie</a></li>
-                <li><a href="#" class="disapear">Contact</a></li>
+                      <li><a href="evenementen.php">Evenementen</a></li>
+                      <li><a href="informatie.php">Informatie</a></li>
+                      <li><a href="contact.php">Contact</a><li><a href="inloggen.php">Login</a><li><li>
             </ul>
         </nav>
     </section>
+
+    <section class="navbar2">
+        <nav class="nav2">
+            <ul class="grid">
+                <li><a href="evenementen.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;Evenementen</a></li>
+                <li><a href="informatie.php" class="disapear">&nbsp;&nbsp;&nbsp;&nbsp;Informatie</a></li>
+                <li><a href="contact.php" class="disapear">Contact</a></li>
+                <li><a href="inloggen.php" class="disapear">Login</a></li>
+            </ul>
+        </nav>
+    </section>
+    
     </header>
 <body>
     <main>
@@ -72,7 +74,7 @@
 
 
                  <div class="contact-move"></div>
-                 <a href="" class="contact">Contact</a>
+                 <a href="contact.php" class="contact">Contact</a>
 
             </article>
 
