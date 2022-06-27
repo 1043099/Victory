@@ -52,7 +52,7 @@ main{
 }
 
 #links{
-	grid-area: links;
+margin-top: -30px;
 }
 
 #midden{
@@ -76,8 +76,9 @@ main{
 	padding-bottom: 1vh;
 }
 
-.socialicons, .socialicons2{
-	padding-left: 5.5vw;
+.socialicons{
+	padding-left: 40%;
+	margin-top: -140px;
 }
 
 .socials{
