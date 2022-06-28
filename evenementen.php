@@ -8,7 +8,7 @@
     <div class="end">
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav">
-            <li class="nav-item active"> <a class="nav-link mt-2" href="#" data-abc="true" id="clicked">Home<span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item active"> <a class="nav-link mt-2" href="#" data-abc="true" id="clicked">Home</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="product.php" data-abc="true">producten</a> </li>
                 <li class="nav-item "> <a class="nav-link" href="#" data-abc="true">Evenementen</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="#" data-abc="true">Contact</a> </li>
@@ -27,9 +27,9 @@
     <tr>
         <th>Artiest</th>
         <th>Naam</th>
-        <th>statement</th>
-        <th>telefoon nr</th>
-        <th>activiteit</th>
+        <th>Statement</th>
+        <th>Telefoon nr.</th>
+        <th>Activiteit</th>
     </tr>    
     <?php
     require('config.php');
