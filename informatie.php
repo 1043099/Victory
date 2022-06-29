@@ -50,39 +50,36 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
                     <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
-                            <h4 class="font-weight-bold text-white mb-0">$1,50</h4>
-                        </div>
-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+                        <div class="bg-primary mt-n5 py-3" style="width: 1519px;">
+                        </div><br><br>
                             <img class="grid-item-2 blikje" src="images/can1orange.png" style="object-fit: scale-down;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Victory energy Classic</h5>
+                        <h4 class="font-weight-bold text-white mb-0">€1,50</h4>
                         <a href="" class="btn btn-sm btn-secondary">250ml</a>
                         <p1 id="info"><br>Ingrediënten. Water, Suiker, Vet, Vetzuur, Eiwit.</p1>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
                     <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
-                            <h4 class="font-weight-bold text-white mb-0">$3,-</h4>
+                        <div class="bg-primary mt-n5 py-3" style="width: 1519px;">
                         </div>
-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
                             <img class="grid-item-2 blikje" src="images/can1orange.png" style="object-fit: scale-down;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Victory energy zero sugar</h5>
+                        <h4 class="font-weight-bold text-white mb-0">€1,50</h4>
                         <a href="" class="btn btn-sm btn-secondary">250ml</a>
                         <p1 id="info"><br>Ingrediënten. Water, Suiker, Vet, Vetzuur, Eiwit.</p1>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 pb-2">
                     <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
-                            <h4 class="font-weight-bold text-white mb-0">$4,-</h4>
+                        <div class="bg-primary mt-n5 py-3" style="width: 1519px;">
                         </div>
-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
                             <img class="grid-item-2 blikje" src="images/can1orange.png" style="object-fit: scale-down;">
                         </div>
-                        <h5 class="font-weight-bold mb-4">Victory energy big</h5>
+                        <h5 class="font-weight-bold mb-4">Victory energy royale</h5>
+                        <h4 class="font-weight-bold text-white mb-0">€2,50</h4>
                         <a href="" class="btn btn-sm btn-secondary">500ml</a>
                         <p1 id="info"><br>Ingrediënten. Water, Suiker, Vet, Vetzuur, Eiwit.</p1>
                     </div>
